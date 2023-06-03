@@ -23,7 +23,7 @@ function setup(){
 //crie uma tela
 
 // createCanvas(window,window);
-// createCanvas(windowWidth,windowHeight);
+ createCanvas(windowWidth,windowHeight);
 // createCanvas(width,height);
 // createCanvas(200,200);
 
@@ -56,11 +56,10 @@ function draw() {
   edges= createEdgeSprites();
   boy.collide(edges);
   
-  //código para reiniciar o plano de fundo
-
-  // if(path.x > height ){
-  //   path.x = height/2;
-  // }
+  //código para reiniciar o plano de fund
+   if(path.x > height ){
+     path.x = height/2;
+   }
 
   // if(path.y > height ){
   //   path.x = height/2;
